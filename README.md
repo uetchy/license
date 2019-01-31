@@ -33,8 +33,7 @@ license() {
 
   license_body=${license_body//"{{ year }}"/${year}}
   license_body=${license_body//"{{ organization }}"/${organization}}
-  echo ${license_body} >LICENSE
-  echo $license_body
+  echo ${license_body} >/dev/stdout >LICENSE
   echo "\nSaved to ./LICENSE"
 }
 ```
